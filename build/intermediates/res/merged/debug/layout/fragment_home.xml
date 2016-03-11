@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="vn.edu.usth.beachyirc.HomeActivity$PlaceholderFragment"
+    >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Fields marked with * are mandatory."
+        android:textColor="@color/colorAccent"
+        android:id="@+id/m1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryText"
+        android:id="@+id/titleEdit"
+        android:layout_below="@+id/m1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:hint="Title *"
+        />
+
+    <TextView
+        android:id="@+id/m2"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title of the connection. Must be unique."
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/titleEdit"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/serverEdit"
+        android:layout_below="@+id/m2"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:hint="Server *"
+        />
+
+    <TextView
+        android:id="@+id/m3"
+        android:layout_below="@id/serverEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:text="Server address. E.g.: irc.usth.edu.vn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/portEdit"
+        android:layout_below="@+id/m3"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:hint="Port *"
+        />
+
+    <TextView
+        android:id="@+id/m4"
+        android:layout_below="@id/portEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:text="Port number, 6667 is commonly used."
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nickEdit"
+        android:textColor="@color/colorPrimaryText"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:hint="Nickname"
+        android:layout_below="@+id/m4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/m5"
+        android:layout_below="@id/nickEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:text="Optional"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/button"
+        android:layout_below="@+id/m6"
+        android:layout_alignRight="@+id/m3"
+        android:layout_alignEnd="@+id/m3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editPassword"
+        android:layout_below="@+id/m5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Password" />
+
+    <TextView
+        android:id="@+id/m6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryText"
+        android:text="Password. Optional"
+        android:layout_below="@+id/editPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
